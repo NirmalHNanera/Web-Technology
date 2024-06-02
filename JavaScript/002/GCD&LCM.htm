@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            x = parseInt(prompt("Enter x : "));
+            y = parseInt(prompt("Enter y : "));
+
+            var gcd=0;
+            var lcm=0
+
+
+            for(i=0; i<=x; i++){
+                if(x%i==0 && y%i==0){
+                    gcd=i;
+                }
+            }
+
+            lcm = Math.abs(x*y)/gcd;
+
+            document.write("GCD is : "+gcd+"<br>");
+            document.write("LCM is : "+lcm);
+        </script>
+    </body>
+</html>
